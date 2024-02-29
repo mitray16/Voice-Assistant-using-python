@@ -1,8 +1,6 @@
 import datetime
 import os
 import webbrowser
-
-import PyPDF2
 import pyjokes
 import pyttsx3
 import random
@@ -161,7 +159,7 @@ if __name__ == "__main__":
             exit()
         elif 'calculate' or 'plot' in query:
             try:
-                app_id = "8QP7W5-RY8P4WE3YQ"
+                app_id = " " #your wolframalpha api id
                 client = wolframalpha.Client(app_id)
                 indx = query.lower().split().index('calculate')
                 query = query.split()[indx + 1:]
